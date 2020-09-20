@@ -1,0 +1,117 @@
+@font-face {
+  font-family: druk;
+  src: url('font/DrukTextWide-Bold.woff') format('woff');
+  src: url('font/DrukTextWide-Bold.otf') format('otf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+      color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+  
+body {
+      background: black;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  align-items: center;
+}
+
+.instagram {
+  font-family: 'druk';
+  font-size: 1rem;
+  color: white;
+  position: static;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  font-size: 10vw;
+  color: white;
+  padding-bottom: 10%;
+}
+
+.middle {
+  background: url('img/art2-min.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 75%;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  font-family: 'druk';
+  color: white;
+  position: fixed;
+  margin-bottom: 30px;
+  position: absolute;
+  font-size: 2em;
+}
+
+.bottom_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom {
+  margin: auto;
+  text-align: center;
+  font-family: druk;
+}
+
+.work {
+  font-size: 10vw;
+}
+
+.bottom li {
+  padding-top: 10px;
+  font-size: 3vw;
+}
