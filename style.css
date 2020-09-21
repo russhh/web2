@@ -5,6 +5,16 @@
   src: url("font/DrukTextWide-Bold.woff2") format("woff2");
 }
 
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 html,
 body {
   width: 100%;
@@ -58,13 +68,21 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 99%;
+}
+
+.arrow_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
 .text {
   font-size: 10vw;
   color: white;
   padding-bottom: 10%;
+  font-family: "Inter", sans-serif;
 }
 
 .middle {
@@ -91,9 +109,9 @@ footer {
   font-family: "druk";
   color: white;
   position: fixed;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .bottom_container {
