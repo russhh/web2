@@ -45,23 +45,31 @@ body {
 }
 
 .logo {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 50px;
+  filter: invert(100);
 }
 
 header {
   display: flex;
-  justify-content: center;
-  padding: 20px 10%;
+  padding: 50px 10%;
   align-items: center;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 99%;
+  margin: auto;
 }
 
 .arrow_container {
@@ -72,10 +80,15 @@ header {
 }
 
 .text {
+  letter-spacing: -7.5px;
   font-size: 10vw;
   color: white;
-  padding-bottom: 10%;
   font-family: "Inter", sans-serif;
+}
+
+.middle_wraper {
+  width: 100%;
+  height: 1000px;
 }
 
 .middle {
@@ -84,43 +97,31 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
+  justify-content: center;
   width: 100%;
-  height: 75%;
+  height: 1000px;
 }
 
 .middle img {
   width: 100%;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.email {
-  font-family: "druk";
-  color: white;
-  position: fixed;
-  padding-bottom: 30px;
-  position: absolute;
-  font-size: 1.5rem;
-}
-
 .bottom_container {
-  display: flex;
-  width: 100%;
-  height: 100%;
   color: white;
   background: black;
-  width: 100%;
-  height: 100%;
+}
+
+.bottom_flex {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 60px);
 }
 
 .bottom {
-  margin: auto;
   text-align: center;
+  margin: auto;
   font-family: druk;
+  justify-content: center;
 }
 
 .work {
@@ -130,6 +131,32 @@ footer {
 .bottom li {
   padding-top: 10px;
   font-size: 1vw;
+}
+
+footer {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 30px 10%;
+}
+
+.logomark {
+  width: 100px;
+  height: auto;
+  filter: invert(100);
+}
+
+.balance {
+  width: 100px;
+  height: auto;
+  filter: opacity(0);
+}
+
+.emailtext {
+  font-family: "druk";
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -144,8 +171,18 @@ footer {
 
 @media screen and (max-width: 750px) {
   .logo {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 50px;
+    filter: invert(100);
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100%;
   }
 
   .work {
@@ -169,5 +206,33 @@ footer {
   .middle img {
     width: 100%;
     height: auto;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    position: absolute;
+    width: 100%;
+    display: grid;
+  }
+
+  .logomark {
+    width: 100px;
+    height: auto;
+    filter: invert(100);
+  }
+
+  .balance {
+    width: 100px;
+    height: auto;
+    filter: opacity(0);
+  }
+
+  .emailtext {
+    font-family: "druk";
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 20px;
   }
 }
