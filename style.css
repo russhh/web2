@@ -5,10 +5,8 @@
   src: url("font/DrukTextWide-Bold.woff2") format("woff2");
 }
 
-@import url("https://rsms.me/inter/inter.css");
-html {
-  font-family: "Inter", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
@@ -80,7 +78,7 @@ header {
 }
 
 .text {
-  letter-spacing: -7.5px;
+  letter-spacing: -0.075em;
   font-size: 10vw;
   color: white;
   font-family: "Inter", sans-serif;
